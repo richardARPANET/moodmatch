@@ -10,6 +10,10 @@ class MoodMatch:
             options = {}
 
         self.options = options
+        self.accuracy = 0
+        #increase accuracy to inc base num of matches in opinions
+        if 'accuracy' in self.options:
+            self.accuracy = self.options['accuracy']
         self.api_key = self.options['api_key']
 
     def match(self, mood, opinions):
@@ -37,7 +41,7 @@ class MoodMatch:
                 match_count += 1
 
         #if found, our content likely matches our mood
-        if match_count > 0:
+        if match_count > self.accuracy:
             return True
         else:
             return False

@@ -1,6 +1,6 @@
 from moodmatch import MoodMatch
 
-#api needed for synonym search http://words.bighugelabs.com/api.php
+#api is needed for synonym search http://words.bighugelabs.com/api.php
 moodmatch = MoodMatch({'api_key': '17b4ea0267a290e34b3645db71e17f3f'})
 
 
