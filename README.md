@@ -10,6 +10,6 @@ Python class to determine the mood of content based on opinions of that content 
 
 ## Tests
 
-    See tests.py for an example test case.
+    See test.py for an example test case.
 
 
