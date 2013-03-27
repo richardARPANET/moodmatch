@@ -32,10 +32,10 @@ class MoodMatch:
         mood_syns.extend([mood])
 
         #words to array, remove whitespace tabs, newlines
-        review_words = opinions.split()
+        opinion_words = opinions.split()
         match_count = 0
         #look for our search mood within content opinions
-        for word in review_words:
+        for word in opinion_words:
             word = self.clean_word(word)
             if word in mood_syns:
                 match_count += 1
