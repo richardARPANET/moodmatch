@@ -17,8 +17,8 @@ class MoodMatch:
         self.api_key = self.options['api_key']
 
     def match(self, mood, opinions):
-        mood_clean = self.clean_word(mood)
-        resp = self.get_synonyms(mood_clean)
+        mood = self.clean_word(mood)
+        resp = self.get_synonyms(mood)
 
         resp_types = ('adjective', 'noun', 'verb')
         mood_syns = []
