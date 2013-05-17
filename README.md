@@ -1,4 +1,5 @@
 # MoodMatch
+[![Build Status](https://travis-ci.org/richardasaurus/moodmatch.png?branch=master)](https://travis-ci.org/richardasaurus/moodmatch)
 
 Python class to determine the mood of content based on opinions of that content from others.
 
